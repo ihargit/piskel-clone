@@ -1,0 +1,19 @@
+.form-resize {
+  line-height: normal;
+
+  input {
+    vertical-align: middle;
+    margin: 10px auto;
+  }
+
+  label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .resize-caption {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,129 @@
+.tools-wrapper {
+  list-style: none;
+  display: inline-block;
+  padding-inline-start: 0;
+
+  .tool-icon {
+    float: left;
+    width: 46px;
+    height: 46px;
+    position: relative;
+    margin: 1px;
+    background-image: url("./images/icons.png");
+    background-color: #3a3a3a;
+  }
+
+  .tool-icon.selected::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 3px solid gold;
+    box-sizing: border-box;
+  }
+
+  .tool-icon:hover {
+    background-color: #444444;
+    cursor: pointer;
+  }
+
+  .icon-tool-paint-bucket {
+    background-position: -228px -92px;
+  }
+
+  .icon-tool-pen {
+    background-position: -182px -92px;
+  }
+
+  .icon-tool-eraser {
+    background-position: -46px -228px;
+  }
+
+  .icon-tool-colorswap {
+    background-position: -228px -138px;
+  }
+
+  .icon-tool-vertical-mirror-pen {
+    background-position: 0 -136px;
+  }
+
+  .icon-tool-colorpicker {
+    background-position: -274px 0;
+  }
+
+  .icon-tool-stroke {
+    background-position: -46px -136px;
+  }
+
+  .icon-tool-broom {
+    background-image: url("./images/broom.svg");
+    height: 46px;
+    width: 46px;
+  }
+
+  .icon-tool-move {
+    background-position: -184px -228px;
+  }
+
+  .icon-tool-rectangle {
+    background-position: -182px 0;
+  }
+
+  .icon-tool-circle {
+    background-position: -228px -46px;
+  }
+
+  .icon-tool-dithering {
+    background-position: 0 -228px;
+  }
+
+  .icon-tool-shape-select {
+    background-position: -92px -136px;
+  }
+}
+
+.pen-cursor,
+.tool-vertical-mirror-pen,
+.icon-tool-stroke {
+  cursor: url("./images/pen-cursor.png"), auto;
+}
+
+.eraser-cursor {
+  cursor: url("./images/eraser-cursor.png") 0 20, auto;
+}
+
+.bucket-cursor {
+  cursor: url("./images/bucket-cursor.png") 0 20, auto;
+}
+
+.colorpicker-cursor {
+  cursor: url("./images/color-picker.png") 0 20, auto;
+}
+
+.broom-cursor {
+  cursor: url("./images/broom.png") 0 20, auto;
+}
+
+.move-cursor {
+  cursor: grab;
+}
+
+.default-cursor {
+  cursor: default;
+}
+
+.cross-cursor {
+  cursor: crosshair;
+}
+
+.dithering-cursor {
+  cursor: url("./images/dithering.png") 0 20, auto;
+}
+
+.shape-select-cursor {
+  cursor: url("./images/magic-wand.png"), auto;
+}
+
+.invisible {
+  visibility: hidden;
+}

@@ -1,0 +1,6 @@
+node_modules
+dist
+don't archive
+.idea
+coverage
+

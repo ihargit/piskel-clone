@@ -1,0 +1,84 @@
+.preview-container {
+  background: #333333;
+  border-radius: 0 0 2px 2px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 0 solid black;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  font-size: 0;
+
+  .canvas-container-wrapper {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+
+    .canvas-container {
+      height: 200px;
+      width: 200px;
+      margin: 0;
+      overflow: hidden;
+      position: relative;
+      display: block;
+
+      .preview-actions {
+        position: absolute;
+        z-index: 500;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        border: 2px solid rgba(100, 100, 100, 0.6);
+
+        .preview-fullscreen-icon {
+          width: 18px;
+          height: 18px;
+          background-image: url("./images/resize.png");
+          background-position: 0 0;
+          background-size: 18px 18px;
+        }
+      }
+
+      .preview-actions:hover {
+        border-color: gold;
+      }
+
+      .preview-canvas-container {
+        height: 200px;
+        width: 200px;
+        margin: 0;
+
+        .canvas-background {
+          background: url("./images/canvas-background.png");
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
+
+        .background-image-frame-container {
+          height: 100%;
+          width: 100%;
+          position: relative;
+          background-position: center;
+        }
+      }
+    }
+  }
+
+  .display-fps {
+    float: left;
+    color: #aaaaaa;
+    font-size: 12px;
+    min-width: 55px;
+    vertical-align: bottom;
+    line-height: 26px;
+  }
+
+  .range-fps {
+    overflow: hidden;
+    width: 100px;
+    height: 26px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}

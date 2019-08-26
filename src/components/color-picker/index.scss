@@ -1,0 +1,45 @@
+.palette-wrapper {
+  margin-top: 10px;
+  margin-left: 10px;
+
+  .palette-icon {
+    display: block;
+    position: relative;
+    padding: 0 2px;
+    cursor: pointer;
+    border-width: 0;
+    background-color: #3a3a3a;
+    width: 44px;
+    height: 46px;
+  }
+
+  .palette-color-primary {
+    margin-top: 0;
+    z-index: 100;
+  }
+
+  .palette-color-secondary {
+    z-index: 90;
+    margin-top: -18px;
+    margin-left: 30px;
+  }
+
+  .swap-color-button {
+    width: 18px;
+    height: 18px;
+    margin-top: -22px;
+    margin-left: 4px;
+    background-image: url("./image/icons.png");
+    background-position: -274px -222px;
+    cursor: pointer;
+    opacity: 0.3;
+  }
+
+  .swap-color-button:hover {
+    opacity: 1;
+  }
+
+  .palette-icon:hover {
+    background-color: #444444;
+  }
+}
